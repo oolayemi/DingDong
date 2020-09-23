@@ -15,7 +15,7 @@
         </button>
       </div>
     </div>
-    <div v-if="errors.length" class="form-error">{{ errors[0] }}</div>
+    <div v-if="errors.length" class="form-error"> {{ errors[0] }} </div>
   </div>
 </template>
 
