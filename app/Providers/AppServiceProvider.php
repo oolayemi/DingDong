@@ -65,7 +65,7 @@ class AppServiceProvider extends ServiceProvider
                 'source' => Storage::getDriver(),
                 'cache' => Storage::getDriver(),
                 'cache_folder' => '.glide-cache',
-                'base_url' => 'img',
+                'base_url' => 'mp3',
             ]);
         });
     }

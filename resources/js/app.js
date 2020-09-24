@@ -4,12 +4,12 @@ import PortalVue from 'portal-vue'
 import { InertiaApp } from '@inertiajs/inertia-vue'
 
 Vue.config.productionTip = false
-Vue.mixin({ methods: { route: window.route } })
-Vue.use(InertiaApp)
-Vue.use(PortalVue)
-Vue.use(VueMeta)
+Vue.mixin({ methods: { route: window.route } });
+Vue.use(InertiaApp);
+Vue.use(PortalVue);
+Vue.use(VueMeta);
 
-let app = document.getElementById('app')
+let app = document.getElementById('app');
 
 new Vue({
   metaInfo: {
@@ -21,4 +21,4 @@ new Vue({
       resolveComponent: name => import(`@/Pages/${name}`).then(module => module.default),
     },
   }),
-}).$mount(app)
+}).$mount(app);

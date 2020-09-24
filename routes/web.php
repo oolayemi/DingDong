@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\OrganizationsController;
+use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
@@ -38,6 +39,11 @@ Route::post('logout', [LoginController::class, 'logout'])
 Route::get('/', [DashboardController::class, 'index'])
     ->name('dashboard')
     ->middleware('auth');
+
+//Projects
+Route::get('projects', [ProjectsController::class, 'index'])
+    ->name('projects')
+    ->middleware('remember', 'auth');
 
 // Users
 
@@ -137,7 +143,7 @@ Route::get('reports', [ReportsController::class, 'index'])
 
 // Images
 
-Route::get('/img/{path}', [ImagesController::class, 'show'])->where('path', '.*');
+Route::get('/mp3/{path}', [ImagesController::class, 'show'])->where('path', '.*');
 
 // 500 error
 
@@ -147,5 +153,7 @@ Route::get('500', function () {
         Config::set('app.debug', true);
     }
 
-    echo $fail;
+    //echo $fail;
 });
+
+//Route::get('')
