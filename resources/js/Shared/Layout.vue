@@ -43,7 +43,7 @@
           <div class="flex-shrink-0 bg-white border-t p-4">
 
               <audio controls loop class="w-full">
-                  <source src="../../../public/mp3/let.mp3" type="audio/mpeg" />
+                  <source src="../../../public/mp3/let.mp3" type="audio/mp3" />
               </audio>
           </div>
       </div>
