@@ -28,7 +28,9 @@ import Logo from '@/Shared/Logo'
 import TextInput from '@/Shared/TextInput'
 
 export default {
-  metaInfo: { title: 'Login' },
+  metaInfo: {
+      title: 'Login'
+  },
   components: {
     LoadingButton,
     Logo,
@@ -49,7 +51,7 @@ export default {
   },
   methods: {
     submit() {
-      this.sending = true
+      this.sending = true;
       this.$inertia.post(this.route('login.attempt'), {
         email: this.form.email,
         password: this.form.password,
