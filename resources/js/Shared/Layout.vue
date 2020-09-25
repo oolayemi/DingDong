@@ -40,16 +40,12 @@
             <slot />
           </div>
         </div>
-          <!--<div class="flex-shrink-0 bg-white border-t p-4">
-
-              <audio controls loop class="w-full">
-                  <source src="../../../public/mp3/let.mp3" type="audio/mp3" />
-              </audio>
-          </div>-->
+          <player/>
       </div>
     </div>
   </div>
 </template>
+
 
 <script>
 import Dropdown from '@/Shared/Dropdown'
@@ -57,6 +53,8 @@ import FlashMessages from '@/Shared/FlashMessages'
 import Icon from '@/Shared/Icon'
 import Logo from '@/Shared/Logo'
 import MainMenu from '@/Shared/MainMenu'
+import Player from '@/Shared/Player'
+
 
 export default {
   components: {
@@ -65,6 +63,8 @@ export default {
     Icon,
     Logo,
     MainMenu,
+    Player
+
   },
   data() {
     return {
