@@ -14,7 +14,9 @@
 import Layout from '@/Shared/Layout';
 
 export default {
-  metaInfo: { title: 'Dashboard' },
+  metaInfo: {
+      title: 'Dashboard'
+  },
   layout: Layout,
 }
 </script>
